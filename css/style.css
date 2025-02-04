@@ -11,6 +11,14 @@ html {
     box-sizing: inherit;
 }
 
+button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -52,6 +60,10 @@ body {
 .menu {}
 
 .menu__btn {
+    display: none;
+}
+
+.mobile-nav, .menu__close {
     display: none;
 }
 
@@ -153,7 +165,55 @@ body {
 
 @media (max-width: 860px) {
     .menu__list {
-        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 360px;
+        height: max-content;
+        margin: 0 auto;
+        background-color: #fff;
+        display: block;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .menu__close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .menu__item {
+        margin-bottom: 30px;
+        font-style: 24px;
+        font-family: "Cormorant", serif;
+    }
+
+    .mobile-nav, .menu__close {
+        display: block;
+    }
+
+    .mobile-menu {
+        padding-top: 60px;
+        margin: 60px 30px;
+        border-top: 2px solid #F7F2EA;
+    }
+
+    .mobile-menu__item {
+        margin-bottom: 35px;
+    }
+
+    .mobile-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F7F2EA;
+        height: 60px;
+        padding: 0 80px;
     }
 
     .menu__btn {
@@ -219,7 +279,7 @@ body {
         line-height: normal;
     }
 
-    
+
 
     .blockquote__text {
         font-size: 16px;
