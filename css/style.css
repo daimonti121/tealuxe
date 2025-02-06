@@ -19,6 +19,14 @@ button {
     margin: 0;
 }
 
+.title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: "Cormorant", serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -68,8 +76,8 @@ body {
     top: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, .5);
-    z-index: 1;   
-    transition: background-color 0.3s ease; 
+    z-index: 1;
+    transition: background-color 0.3s ease;
     height: 120vh;
 }
 
@@ -158,7 +166,49 @@ body {
     margin: 150px auto;
 }
 
+.assortment {
+    margin-bottom: 150px;
+}
+
+.container {}
+
+.assortment__list {
+    text-align: center;
+    display: flex;
+    gap: 0 40px;
+    flex-wrap: wrap;
+}
+
+.assortment__item {}
+
+.assortment__img {
+    width: 208px;
+    height: 208px;
+}
+
+.assortment__name {
+    font-family: "Cormorant", serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1000px) {
+
+    .title {
+        margin-bottom: 30px;
+    }
+
     .user-actions__link-serch {
         margin-left: 30px;
     }
@@ -182,6 +232,22 @@ body {
     .blockquote__text {
         margin: 135px auto 120px;
     }
+
+    .assortment {
+        margin-bottom: 120px;
+    }
+
+    .assortment__list {
+        gap: 0;
+        flex-wrap: nowrap;
+    }
+
+    .assortment__img {
+        max-width: 208px;
+        max-height: max-content;
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 860px) {
@@ -291,6 +357,12 @@ body {
         margin-left: 0px;
     }
 
+    .assortment__list {
+        gap: 0 6px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
 
 @media (max-width: 680px) {
@@ -339,9 +411,28 @@ body {
         max-width: 360px;
         width: 100%;
     }
+
+    .assortment__list {
+        gap: 0px;
+    }
+
+    .assortment {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 440px) {
+    .assortment__img {
+        max-width: 150px;
+    }
 }
 
 @media (max-width: 360px) {
+    .title {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
     .user-actions__link-serch {
         margin-left: 0px;
     }
@@ -372,5 +463,9 @@ body {
 
     .top__inner {
         min-height: 367px;
+    }
+
+    .assortment {
+        margin-bottom: 80px;
     }
 }
