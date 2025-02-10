@@ -48,7 +48,7 @@ body {
     font-family: "Open Sans", serif;
     font-size: 20px;
     font-weight: 300;
-    line-height: 1.5;
+    line-height: normal;
     position: relative;
     /* font-family: "Cormorant", serif; */
 }
@@ -141,7 +141,6 @@ body {
     font-size: 24px;
     margin-bottom: 48px;
     max-width: 560px;
-    line-height: normal;
 }
 
 .blockquote__text {
@@ -161,6 +160,7 @@ body {
 .assortment__list {
     text-align: center;
     display: flex;
+    justify-content: center;
     gap: 0 40px;
     flex-wrap: wrap;
 }
@@ -207,46 +207,83 @@ body {
 }
 
 .main-block {
-    margin: 150px 0;
+    padding: 150px 0;
 }
-
-.main__title {}
 
 .main-block__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 60px 40px;
+    gap: 40px 58px;
 }
 
 .main-block__item {
     display: flex;
     flex-basis: 542px;
+    gap: 0 20px;
 }
 
-.main-block__item-title {}
+.main-block__item-title {
+    font-family: "Cormorant", serif;
+    font-size: 24px;
+    font-weight: 400;
+}
 
 .main-block__item-img {}
 
 .main-block__content {
     display: flex;
-    margin-left: 20px;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .main-block__item-author {
     display: block;
+    font-size: 13px;
 }
 
 .main-block__item-link {
     display: block;
+    font-size: 13px;
 }
 
 .main-blog__link {}
 
 
+.main-list {
+    background-color: #ffaaff;
+}
+
+.title {}
+
+.main-list__inner {}
+
+.main-list__text {}
+
+.main-list__form {}
+
+.main-list__email {}
+
+.main-list__btn {}
+
+.checkbox {}
+
+.checkbox-style {}
+
+.checkbox__text {}
+
+.prioritiss {}
+
+.title {}
+
+.prioritiss__list {}
+
+.prioritiss__item {}
+
+.prioritiss__title {}
+
+.prioritiss__text {}
 
 
 
@@ -442,7 +479,6 @@ body {
 
     .top__title {
         font-size: 40px;
-        line-height: normal;
     }
 
     .blockquote__text {
