@@ -922,11 +922,11 @@ body {
     }
 
     .prioritiss {
-        padding: 40px 0px;
+        padding: 0px 0px 40px;
     }
 
     .main-block {
-        padding: 0px 0;
+        padding: 50px 0 0px;
     }
 
 }
