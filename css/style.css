@@ -384,8 +384,6 @@ body {
     margin: 150px 0;
 }
 
-.title {}
-
 .prioritiss__list {
     text-align: center;
     display: flex;
@@ -400,12 +398,164 @@ body {
     font-weight: 300;
 }
 
-.prioritiss__item {}
-
 .prioritiss__text {
     margin-bottom: 30px;
     font-weight: 600;
 }
+
+.footer {
+    padding: 100px 0 20px;
+    background-color: #F7F2EA;
+}
+
+.footer__inner {
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 40px;
+}
+
+.footer__products {}
+
+.footer__products-title,
+.footer__company-title {
+    font-size: 24px;
+    font-family: "Cormorant", serif;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+.footer__products-item {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.footer__products-link {}
+
+.footer__company {}
+
+.footer__company-title {}
+
+.footer__company-item {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.footer__company-link {}
+
+.footer__blockquote-text {
+    margin-top: 80px;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.footer__blockquote-author {
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.footer__blockquote-author span {
+    display: block;
+}
+
+.footer__contacts-title {
+    font-family: "Cormorant", serif;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+.footer__contacts-text {
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.footer__nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__nav-logo {
+    margin-right: 40px;
+}
+
+.footer__logo {}
+
+.footer__nav-contacts {
+    position: relative;
+    margin-top: 20px;
+}
+
+.footer__phone {
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 32px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer__mail {
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 32px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer__phone::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url(/images/phone.svg);
+}
+
+.footer__mail::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 22px;
+    height: 16px;
+    background-image: url(/images/mail.svg);
+}
+
+.footer__social {
+    margin-top: 40px;
+    margin-left: 97px;
+}
+
+.footer__social-list {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+
+.footer__social-item {}
+
+.footer__social-link {}
+
+.footer__bottom {
+    display: flex;
+}
+
+.footer__copy {
+    margin-right: 192px;
+    font-size: 16px;
+}
+
+.partnaers-logo {
+    display: flex;
+    align-items: center;
+    gap: 0px 20px;
+}
+
+.partnaers-logo__item {}
 
 
 
